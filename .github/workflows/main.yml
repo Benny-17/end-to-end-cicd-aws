@@ -19,7 +19,12 @@ jobs:
         username: ubuntu
         key: ${{ secrets.EC2_SSH_KEY }}
         script: |
-          cd end-to-end-cicd-aws/app
-          docker stop $(docker ps -q) || true
+          cd end-to-end-cicd-aws
+          git pull origin main
+
+          cd app
+          docker stop $(docker ps -q --filter ancestor=myflaskapp) || true
+          docker rm $(docker ps -aq --filter ancestor=myflaskapp) || true
+
           docker build -t myflaskapp .
           docker run -d -p 5000:5000 myflaskapp
