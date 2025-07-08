@@ -126,11 +126,22 @@ Access Flask App at http://<EC2-Public-IP>:5000
 
 ### Screenshots
 
-> Add screenshots of:
->
-> * The Flask app running in the browser.
-> * Terraform CLI output.
-> * GitHub Actions workflow success screen.
+<details>
+<summary>Click here to view screenshots</summary>
+
+<br>
+
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/2a7ee46c-2268-4020-abda-a9023cd677cb" width="350"/>
+  <img src="https://github.com/user-attachments/assets/5152b297-58cc-4a2a-8572-11420614b2b4" width="350"/>
+</p>
+
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/44372b48-bd86-4812-b34d-62f2d762d090" width="350"/>
+  <img src="https://github.com/user-attachments/assets/4621cb66-f04a-4d9a-809f-bf7cf276c50c" width="350"/>
+</p>
+
+</details>
 
 ---
 
